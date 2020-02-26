@@ -14,15 +14,15 @@ This installs some handy text parsing utilities, and the latest ecs-cli.
 ## Clone this demo repository:
 ```
 cd ~/environment
-git clone https://github.com/brentley/container-demo.git
+git clone https://github.com/arturi-to/container-demo.git
 ```
 
 ## Clone our application microservice repositories:
 ```
 cd ~/environment
-git clone https://github.com/brentley/ecsdemo-frontend.git
-git clone https://github.com/brentley/ecsdemo-nodejs.git
-git clone https://github.com/brentley/ecsdemo-crystal.git
+git clone https://github.com/arturi-to/ecsdemo-frontend.git
+git clone https://github.com/arturi-to/ecsdemo-nodejs.git
+git clone https://github.com/arturi-to/ecsdemo-crystal.git
 ```
 
 ## Build a VPC, ECS Cluster, and ALB:
@@ -195,5 +195,3 @@ aws cloudformation wait stack-delete-complete --stack-name container-demo-alb
 aws cloudformation delete-stack --stack-name container-demo
 aws cloudformation delete-stack --stack-name amazon-ecs-cli-setup-private-dns-namespace-$clustername-ecsdemo-frontend
 ```
-
-
